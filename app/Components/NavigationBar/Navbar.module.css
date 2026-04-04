@@ -1,0 +1,39 @@
+.container{
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.navLinks{
+    display: flex;
+    gap: 2rem;
+    font-weight: 700;
+}
+
+.navLinks span:hover{
+    color: var(--text-secondary);
+}
+
+.navIcons{
+    display: flex;
+    gap: 1rem;
+}
+
+.navIcons svg {
+    cursor: pointer;
+}
+
+.navIcons svg:hover{
+    fill: var(--text-secondary);
+}
