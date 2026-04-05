@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:var(--font-changa);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,7 +45,7 @@ a {
   max-width: 70%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .contentWidth {
     max-width: 95%;
   }

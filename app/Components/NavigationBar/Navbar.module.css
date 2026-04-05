@@ -18,7 +18,8 @@
 .navLinks{
     display: flex;
     gap: 2rem;
-    font-weight: 700;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .navLinks span:hover{
@@ -36,4 +37,10 @@
 
 .navIcons svg:hover{
     fill: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;   /* ✅ hide on mobile */
+  }
 }

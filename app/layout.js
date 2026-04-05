@@ -1,14 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Changa } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/NavigationBar/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const changa = Changa({
+  variable: "--font-changa",
   subsets: ["latin"],
 });
 
@@ -19,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" theme="light" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={changa.variable}>
       <body>
         <header>
           <Navbar/></header>

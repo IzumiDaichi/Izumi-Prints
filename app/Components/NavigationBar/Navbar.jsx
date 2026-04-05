@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Globe } from "../Icons/Globe";
 import { Star } from "../Icons/Star";
 import { Basket } from "../Icons/Basket";
+import MobileMenu from "./MobileMenu";
 
 function Navbar() {
   return (
@@ -36,8 +37,9 @@ function Navbar() {
 
         <div className={styles.navIcons}>
           <Globe/>
-          <Star/>
-          <Basket/>
+          <Link href="/wishlist"><Star/></Link>
+          <Link href="/basket"><Basket/></Link>
+          <MobileMenu/>
         </div>
       </div>
     </div>
